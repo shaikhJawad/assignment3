@@ -5,7 +5,7 @@ public class Student {
 	int id;
 	String name;
 	String grade;
-	
+	int age;
 	public void Student()
 	{
 		
@@ -39,6 +39,15 @@ public class Student {
 	public String getGrade()
 	{
 		return this.grade;
+	}
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public int getAge()
+	{
+		return this.age;
 	}
 	
 }

@@ -28,10 +28,10 @@ public class StudentIntegrationTest {
 		Student s = new Student();
 		ageCalculation a = new ageCalculation();
 		
-		SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sd = new SimpleDateFormat();
 		Date dob;
 		try {
-			dob = sd.parse("1990-01-01");
+			dob = sd.parse("2020-01-01");
 			int age = a.calcAge(dob);
 			s.setAge(age);
 			Assert.assertEquals(30, s.getAge());

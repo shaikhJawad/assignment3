@@ -36,5 +36,19 @@ public class StudentUnitTest {
 		_student.grade = "B";
 		Assert.assertEquals("B", _student.getGrade());
 	}
+	@Test
+	public void setAgeTest() {
+		// Happy Path Test
+		Student _student = new Student();
+		_student.setAge(27);
+		Assert.assertEquals(27, _student.age);
+	}
+	@Test
+	public void getAgeTest() {
+		// Happy Path Test
+		Student _student = new Student();
+		_student.age = 27;
+		Assert.assertEquals(27, _student.getAge());
+	}
 
 }

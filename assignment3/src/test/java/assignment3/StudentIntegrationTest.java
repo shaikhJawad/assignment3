@@ -31,7 +31,7 @@ public class StudentIntegrationTest {
 		SimpleDateFormat sd = new SimpleDateFormat();
 		Date dob;
 		try {
-			dob = sd.parse("2020/01/01");
+			dob = sd.parse("2020-01-01");
 			int age = a.calcAge(dob);
 			s.setAge(age);
 			Assert.assertEquals(30, s.getAge());
